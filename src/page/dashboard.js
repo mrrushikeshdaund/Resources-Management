@@ -1,12 +1,20 @@
-import React from 'react'
-import TopBar from '../component/topbar';
+import React, { useEffect, useState } from "react";
+import TopBar from "../component/topbar";
+import GridTable from "../component/gridTable";
+import ChartSection from "../component/chartSection";
 
-const dashboardPage = ()=> {
+const DashboardPage = () => {
   return (
     <div>
-        <TopBar />
+      <TopBar />
+      <div>
+        <div style={{margin:'20px'}}>
+          <ChartSection />
+        </div>
+        <GridTable />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default dashboardPage;
+export default DashboardPage;
